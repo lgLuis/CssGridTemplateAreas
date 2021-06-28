@@ -8,3 +8,27 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+.contenedor-media{
+    margin: 0 auto;
+    max-width: 800px;
+    /*GRID*/
+    display: grid;
+    grid-template-areas:
+        "titulo titulo  titulo  titulo"
+        "img texto texto texto"
+        ;
+        gap: 1rem;
+}
+
+.titulo{
+    grid-area: titulo;
+}
+
+.img{
+    grid-area: img;
+}
+
+.texto{
+    grid-area: texto;
+}
